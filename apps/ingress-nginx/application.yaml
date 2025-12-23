@@ -15,7 +15,7 @@ spec:
           replicaCount: 1
           service:
             type: NodePort
-    type: helm
+    type: Helm
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
