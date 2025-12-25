@@ -9,6 +9,13 @@ spec:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
     path: apps/ingress-nginx/chart
+    helm:
+    releaseName: ingress-nginx
+    values: |
+      controller:
+        replicaCount: 1
+        service:
+          type: NodePort
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
