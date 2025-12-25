@@ -1,4 +1,4 @@
 resources:
-  - my-app
   - ingress-nginx-namespace.yaml
   - ingress-nginx
+  - my-app
