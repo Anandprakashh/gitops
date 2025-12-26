@@ -5,6 +5,8 @@ domainFilters:
   - yourdomain.com
 
 serviceAccount:
+  create: false
+  name: external-dns
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::889490400768:role/ExternalDNS-Role
 
