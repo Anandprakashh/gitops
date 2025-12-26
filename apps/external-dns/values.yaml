@@ -1,0 +1,12 @@
+provider: aws
+registry: txt
+txtOwnerId: "external-dns"
+domainFilters:
+  - yourdomain.com
+
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::889490400768:role/ExternalDNS-Role
+
+policy: upsert-only
+interval: 1m
