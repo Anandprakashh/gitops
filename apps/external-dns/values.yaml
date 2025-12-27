@@ -2,7 +2,7 @@ provider: aws
 registry: txt
 txtOwnerId: "external-dns"
 domainFilters:
-  - yourdomain.com
+  - gitops.anand.local
 
 serviceAccount:
   create: false
