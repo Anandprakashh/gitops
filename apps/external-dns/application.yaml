@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
     path: apps/external-dns
+    directory:
+      recurse: true
     helm:
       valueFiles:
         - values.yaml
