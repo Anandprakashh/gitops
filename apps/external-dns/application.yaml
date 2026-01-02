@@ -6,12 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://kubernetes-sigs.github.io/external-dns/
-    chart: external-dns
-    targetRevision: 1.15.0
+    repoURL: https://github.com/Anandprakashh/gitops.git
+    targetRevision: main
+    path: apps/external-dns
     helm:
       valueFiles:
         - values.yaml
+      chart: chart/external-dns
   destination:
     server: https://kubernetes.default.svc
     namespace: external-dns
