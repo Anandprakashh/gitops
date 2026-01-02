@@ -2,7 +2,7 @@ provider: aws
 registry: txt
 txtOwnerId: "external-dns"
 domainFilters:
-  - gitops.anand.local
+  - anandcloud.com
 
 serviceAccount:
   create: false
@@ -12,3 +12,6 @@ serviceAccount:
 
 policy: upsert-only
 interval: 1m
+
+aws:
+  zoneType: public
