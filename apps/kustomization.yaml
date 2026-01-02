@@ -3,3 +3,4 @@ resources:
   - ingress-nginx
   - external-dns
   - my-app/application.yaml
+  - cert-manager/application.yaml
