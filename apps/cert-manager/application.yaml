@@ -8,11 +8,9 @@ spec:
   source:
     repoURL: https://charts.jetstack.io
     chart: cert-manager
-    targetRevision: v1.15.1
+    targetRevision: v1.16.0
     helm:
-      parameters:
-        - name: installCRDs
-          value: "true"
+      releaseName: cert-manager
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager
