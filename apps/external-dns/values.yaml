@@ -1,17 +1,13 @@
 provider: aws
+policy: upsert-only
 registry: txt
-txtOwnerId: "external-dns"
+
 domainFilters:
   - anandcloud.com
 
+txtOwnerId: external-dns
+txtPrefix: external-dns-
+
 serviceAccount:
-  create: false
   name: external-dns
-  annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::889490400768:role/ExternalDNS-Role
-
-policy: upsert-only
-interval: 1m
-
-aws:
-  zoneType: public
+  annotations: {}

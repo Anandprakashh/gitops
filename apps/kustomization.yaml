@@ -1,6 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 resources:
-  - ingress-nginx-namespace.yaml
-  - ingress-nginx
-  - external-dns
+  - cert-manager/application.yaml
+  - external-dns/application.yaml
+  - ingress-nginx/application.yaml
   - my-app/application.yaml
-  - cert-manager
