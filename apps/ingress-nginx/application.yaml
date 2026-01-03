@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
     path: .
+    directory:
+      recurse: true
     sourceType: Helm
     helm:
       chart: charts/ingress-nginx
