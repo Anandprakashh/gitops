@@ -9,6 +9,7 @@ spec:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
     path: .
+    sourceType: Helm
     helm:
       chart: charts/external-dns
       valueFiles:
