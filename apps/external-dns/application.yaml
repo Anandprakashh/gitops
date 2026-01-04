@@ -8,12 +8,10 @@ spec:
   source:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
-    path: .
-    sourceType: Helm
+    path: charts/external-dns
     helm:
-      chart: charts/external-dns
       valueFiles:
-        - apps/external-dns/values.yaml
+        - ../../apps/external-dns/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: external-dns
