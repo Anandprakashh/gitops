@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/bitnami/charts
+    repoURL: oci://registry-1.docker.io/bitnamicharts
     chart: external-dns
     targetRevision: 6.6.1
     helm:
