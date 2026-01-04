@@ -8,12 +8,10 @@ spec:
   source:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
-    path: .
-    sourceType: Helm
+    path: charts/ingress-nginx
     helm:
-      chart: charts/ingress-nginx
       valueFiles:
-        - apps/ingress-nginx/values.yaml
+        - ../../apps/ingress-nginx/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
