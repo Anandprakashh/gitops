@@ -10,6 +10,7 @@ spec:
     targetRevision: main
     path: charts/external-dns
     helm:
+      releaseName: external-dns
       valueFiles:
         - ../../apps/external-dns/values.yaml
   destination:

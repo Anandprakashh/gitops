@@ -10,6 +10,7 @@ spec:
     chart: cert-manager
     targetRevision: v1.16.0
     helm:
+      repo: https://charts.jetstack.io
       releaseName: cert-manager
   destination:
     server: https://kubernetes.default.svc
@@ -18,3 +19,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  syncOptions:
+    - CreateNamespace=true

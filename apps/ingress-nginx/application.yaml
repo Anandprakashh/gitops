@@ -10,6 +10,7 @@ spec:
     targetRevision: main
     path: charts/ingress-nginx
     helm:
+      releaseName: ingress-nginx
       valueFiles:
         - ../../apps/ingress-nginx/values.yaml
   destination:
