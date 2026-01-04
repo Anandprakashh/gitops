@@ -13,6 +13,7 @@ spec:
         provider: aws
         # no local paths!
   destination:
+    server: https://kubernetes.default.svc
     namespace: external-dns
   syncPolicy:
     automated: {}
