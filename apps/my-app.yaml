@@ -9,6 +9,7 @@ spec:
     targetRevision: main
     path: apps/my-app
   destination:
+    server: https://kubernetes.default.svc
     namespace: my-app
   syncPolicy:
     automated: {}
