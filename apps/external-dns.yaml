@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: external-dns
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/bitnami/charts
+    chart: external-dns
+    targetRevision: 6.6.1
+    helm:
+      values: |
+        provider: aws
+        # no local paths!
+  destination:
+    namespace: external-dns
+  syncPolicy:
+    automated: {}
