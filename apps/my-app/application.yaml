@@ -9,6 +9,9 @@ spec:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
     path: apps/my-app
+    syncOptions:
+    - CreateNamespace=true
+
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app
