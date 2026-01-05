@@ -10,6 +10,8 @@ spec:
     targetRevision: v1.16.0
     helm:
       repo: https://charts.jetstack.io
+      values:
+        installCRDs: true
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager
