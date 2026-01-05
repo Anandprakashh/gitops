@@ -13,3 +13,5 @@ spec:
     namespace: my-app
   syncPolicy:
     automated: {}
+    syncOptions:
+    - CreateNamespace=true
