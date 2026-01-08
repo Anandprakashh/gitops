@@ -10,7 +10,7 @@ spec:
     targetRevision: v1.16.0
     helm:
       repo: https://charts.jetstack.io
-      values:
+      values: |
         installCRDs: true
   destination:
     server: https://kubernetes.default.svc
