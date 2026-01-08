@@ -18,7 +18,7 @@ spec:
                 name: my-app
                 port:
                   number: 80
-  tls:
-    - hosts:
-        - www.anandcloud.com
-      secretName: my-app-tls
+  #tls:
+   # - hosts:
+    #    - www.anandcloud.com
+     # secretName: my-app-tls
