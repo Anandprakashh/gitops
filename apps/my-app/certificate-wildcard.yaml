@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: wildcard-anandcloud
+  namespace: my-app
+spec:
+  secretName: wildcard-anandcloud-tls
+  issuerRef:
+    name: letsencrypt-dns01
+    kind: ClusterIssuer
+  dnsNames:
+    - "*.anandcloud.com"
+    - "anandcloud.com"

@@ -14,6 +14,11 @@ spec:
       repo: https://charts.jetstack.io
       values: |
         installCRDs: true
+        serviceAccount:
+          create: true
+          name: cert-manager
+          annotations:
+            eks.amazonaws.com/role-arn: arn:aws:iam::889490400768:role/CertManager-Role
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager

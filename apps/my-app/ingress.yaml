@@ -21,4 +21,4 @@ spec:
   tls:
     - hosts:
         - www.anandcloud.com
-      secretName: my-app-tls
+      secretName: wildcard-anandcloud-tls
