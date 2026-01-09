@@ -10,18 +10,18 @@ spec:
     chart: external-dns
     targetRevision: 1.15.0
     helm:
-  releaseName: external-dns
-  values: |
-    provider: aws
-    policy: upsert-only
-    registry: txt
-    txtOwnerId: my-cluster
-    domainFilters:
-      - anandcloud.com
-    serviceAccount:
-      create: true
-      annotations:
-        eks.amazonaws.com/role-arn: arn:aws:iam::889490400768:role/ExternalDNS-Role
+      releaseName: external-dns
+      values: |
+        provider: aws
+        policy: upsert-only
+        registry: txt
+        txtOwnerId: my-cluster
+        domainFilters:
+          - anandcloud.com
+        serviceAccount:
+          create: true
+          annotations:
+            eks.amazonaws.com/role-arn: arn:aws:iam::889490400768:role/ExternalDNS-Role
   destination:
     server: https://kubernetes.default.svc
     namespace: external-dns
