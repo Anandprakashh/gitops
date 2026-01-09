@@ -8,7 +8,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-http01
 spec:
   rules:
-    - host: test.anandcloud.com
+    - host: www.anandcloud.com
       http:
         paths:
           - path: /
