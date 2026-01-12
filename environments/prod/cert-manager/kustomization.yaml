@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - clusterissuer-letsencrypt-http01.yaml
+  - clusterissuer-dns01.yaml
