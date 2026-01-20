@@ -13,6 +13,8 @@ spec:
     helm:
       values: |
         controller:
+          nodeSelector:
+            role: ingress
           service:
             type: LoadBalancer
           ingressClass: nginx
