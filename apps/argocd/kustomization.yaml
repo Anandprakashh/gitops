@@ -1,4 +1,6 @@
 resources:
   - certificate.yaml
   - ingress.yaml
-  - configmap.yaml
+
+patches:
+  - argocd-cm-patch.yaml
