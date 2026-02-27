@@ -3,5 +3,3 @@ resources:
   - ingress.yaml
   - argocd-cm.yaml
 
-patches:
-  - argocd-cm-patch.yaml
