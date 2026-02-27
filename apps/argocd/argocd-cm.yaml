@@ -6,3 +6,4 @@ metadata:
 data:
   application.instanceLabelKey: argocd.argoproj.io/instance
   url: https://argocd.anandcloud.com
+  server.insecure: "true"
