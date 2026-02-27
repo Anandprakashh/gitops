@@ -10,17 +10,7 @@ spec:
   source:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
-    path: apps
-    directory:
-      recurse: false
-      include: |
-        cert-manager.yaml,
-        external-dns.yaml,
-        ingress-nginx.yaml,
-        my-app.yaml
-      exclude: |
-        root-app.yaml,
-        argocd.yaml
+    path: clusters/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
