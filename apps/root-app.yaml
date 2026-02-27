@@ -13,8 +13,14 @@ spec:
     path: apps
     directory:
       recurse: false
-      include: "*.yaml"
-      exclude: "root-app.yaml"
+      include: |
+        cert-manager.yaml,
+        external-dns.yaml,
+        ingress-nginx.yaml,
+        my-app.yaml
+      exclude: |
+        root-app.yaml,
+        argocd.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
