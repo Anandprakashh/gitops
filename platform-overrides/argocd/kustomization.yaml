@@ -1,5 +1,7 @@
-resources:
-  - certificate.yaml
-  - ingress.yaml
-  - argocd-cm.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 
+patches:
+  - path: argocd-cm.yaml
+  - path: ingress.yaml
+  - path: certificate.yaml
