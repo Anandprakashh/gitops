@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argo-cd.git
-    targetRevision: stable
-    path: manifests/cluster-install
+    repoURL: https://github.com/Anandprakashh/gitops.git
+    targetRevision: main
+    path: platform/argocd/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
