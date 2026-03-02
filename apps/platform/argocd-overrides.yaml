@@ -4,13 +4,15 @@ metadata:
   name: argocd-overrides
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "4"
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   project: default
   source:
     repoURL: https://github.com/Anandprakashh/gitops.git
     targetRevision: main
     path: platform-overrides/argocd
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
